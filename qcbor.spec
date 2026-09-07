@@ -13,7 +13,7 @@ BuildRequires: doxygen
 BuildRequires: coreutils
 
 %description
-Comprehensive, powerful, commercial-quality CBOR encoder and decoder
+Comprehensive, powerful and commercial-quality CBOR encoder and decoder
 that is still suited for small devices.
 
 

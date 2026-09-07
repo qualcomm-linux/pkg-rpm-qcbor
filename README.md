@@ -4,6 +4,8 @@ SPDX-License-Identifier: BSD-3-Clause
 -->
 # Package branch — CentOS 10 Stream (`c10s`)
 
+Just a testing PR
+
 **This is the branch you work on.** It holds the `qcbor.spec` RPM's spec file and
 `sources` pointer, plus the CI workflows that build and publish them.
 
