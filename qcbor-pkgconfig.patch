@@ -1,3 +1,7 @@
+Add pkg-config support for QCBOR.
+
+Backported from upstream PR: https://github.com/laurencelundblade/QCBOR/pull/385
+
 diff -ruN QCBOR-1.6.1.orig/cmake/qcbor.pc.in QCBOR-1.6.1.new/cmake/qcbor.pc.in
 --- QCBOR-1.6.1.orig/cmake/qcbor.pc.in  1970-01-01 05:30:00.000000000 +0530
 +++ QCBOR-1.6.1.new/cmake/qcbor.pc.in   2026-09-03 02:11:16.920257199 +0530
@@ -15,7 +19,16 @@ diff -ruN QCBOR-1.6.1.orig/cmake/qcbor.pc.in QCBOR-1.6.1.new/cmake/qcbor.pc.in
 diff -ruN QCBOR-1.6.1.orig/CMakeLists.txt QCBOR-1.6.1.new/CMakeLists.txt
 --- QCBOR-1.6.1.orig/CMakeLists.txt     2026-09-03 02:11:16.916257254 +0530
 +++ QCBOR-1.6.1.new/CMakeLists.txt      2026-09-03 02:13:05.142752766 +0530
-@@ -179,3 +179,14 @@
+@@ -10,7 +10,7 @@
+ cmake_minimum_required(VERSION 3.15)
+ 
+ project(qcbor
+-    DESCRIPTION "QCBOR"
++    DESCRIPTION "A CBOR encoder/decoder library"
+     LANGUAGES C
+     VERSION 1.6.1
+ )
+@@ -179,3 +179,13 @@ install(
      DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/qcbor
  )
  
@@ -23,7 +36,6 @@ diff -ruN QCBOR-1.6.1.orig/CMakeLists.txt QCBOR-1.6.1.new/CMakeLists.txt
 +# =========================================================================
 +#    install pkg-config file
 +# =========================================================================
-+
 +configure_file(cmake/qcbor.pc.in cmake/qcbor.pc @ONLY)
 +install(
 +    FILES

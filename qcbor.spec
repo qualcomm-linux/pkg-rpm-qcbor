@@ -1,6 +1,6 @@
 Name:		qcbor
 Version:	1.6.1
-Release:	3%{?dist}
+Release:	3.qli%{?dist}
 Summary:	A CBOR encoder/decoder library
 URL:		https://github.com/laurencelundblade/QCBOR
 License:	BSD-3-Clause
